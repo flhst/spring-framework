@@ -60,6 +60,7 @@ public class ComponentBeanDefinitionParserTests {
 	public void testBionicFirstLevelChildren() throws Exception {
 		Component cp = getBionicFamily();
 		List<Component> components = cp.getComponents();
+		System.out.println("--------------------------------------------------------------------------------");
 		assertThat(2, equalTo(components.size()));
 		assertThat("Mother-1", equalTo(components.get(0).getName()));
 		assertThat("Rock-1", equalTo(components.get(1).getName()));
